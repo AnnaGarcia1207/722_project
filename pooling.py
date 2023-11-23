@@ -63,9 +63,11 @@ def start_pooling(experiment_dataset):
     model_names = ["LogisticRegression", "NaiveBayes", 
                    "GradientBoostingClassifier", "SVC", "LinearSVC"]
     
-    for i in range(len(models)):
-        model = models[i]
-        model_name = model_names[i]
+    i = 0
+    
+    for model in models:
+        i += 1
+        model_name = model_names[i-1]
         print("=========================================")
         print(f"Running {model_name} model : ")
         df = experiment_dataset
@@ -77,7 +79,7 @@ def start_pooling(experiment_dataset):
         predictions = model.predict(data_features)
 
         # get the probabilities of those predictions
-        prediction_probabilities = logistic_regression_model.predict_proba(data_features)
+        prediction_probabilities = model.predict_proba(data_features)
 
         df['y_hat'] = predictions
         df['y_hat_probability'] = [max(prob) for prob in prediction_probabilities]
