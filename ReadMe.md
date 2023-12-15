@@ -75,5 +75,10 @@ Removing duplicates....
 Pooling dataset length: 277
 ```
 
+### Running Extra credit proposal algorithm
 
+1. In order to develop this framework proposal, we used `HPC ODU cluster` and Jupyter notebook and the environment was set up with the following parameters:
+    + **Python Suite:** tensorflow 2.12 + pytorch 1.13 GPU
+    **Number of Cores:** 8
+2. Follow steps in jupyter notebook [Extra credit proposal](notebooks/722_ActiveLearning_bert.ipynb)
 
