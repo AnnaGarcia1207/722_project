@@ -14,6 +14,8 @@ Our group re-created the proposed methods in the research paper using different 
 - [Running Extra credit proposal algorithm](https://github.com/AnnaGarcia1207/722_project?tab=readme-ov-file#running-extra-credit-proposal-algorithm)
 
 ```
+File Structure:
+
 ├── al_trained_models <- Trained Logistic Regression For Active Learning method
 ├── dataset
 │   ├── bert_CAL_experiment_results_v3.csv <- Resulting dataset from algorithm 2 with BERT & CAL protocol
