@@ -13,6 +13,16 @@ import pickle
 # Program will train and save Pooling models
 
 def train_and_save_model(x, y, model_name, save_path):
+    """
+    Train the models using the specified features (X) and target (Y).
+    It will save the model using pickle in specified path.
+
+    Parameters:
+        x (TF-IDF embedding): list of documents in tfidf embedding format
+        y (list): list of training documents
+        model_name (str): model to train
+        save_path (str): specifed path to save the model after training.
+    """
     seed = 220
     # recommended learning rate for Adam 5e-5, 3e-5, 2e-5
     learning_rate = 2e-5
@@ -45,7 +55,9 @@ def train_and_save_model(x, y, model_name, save_path):
     #   return model, X_test, y_test
 
 def main():
-
+    """
+    When executed starts training the models for Pooling Algorithm to build the Pooling dataset.
+    """
     data = pd.read_csv(os.path.join("dataset","train_test_datasetV2.csv"))
     # Step 1: Vectorize the Text Data using TF-IDF
     tfidf_vectorizer = TfidfVectorizer(ngram_range=(1, 3),
