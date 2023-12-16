@@ -24,7 +24,9 @@ File Structure:
 │   ├── tfidf_CAL_experiment_results_v2.csv <- Resulting dataset from algorithm 2 with TFIDF & CAL protocol
 │   ├── train_test_datasetV2.csv <- Training dataset used to train our models
 │   ├── experiment_datasetV2.csv <- Our "Experiment-set" to test the models to build the "Dataset"
+|   ├── experiment_df_bert.csv <- Resulting dataset from Extra credit proposal algorithm
 ├── notebooks
+│   ├── 722_ActiveLearning_bert.ipynb <- Code used to run the Extra credit proposal
 │   ├── 722_PoolingAlgorithmNotebook.ipynb <- Same as pooling.py and pooling_models.py in notebook 
 │   ├── 722_Project_CreateDataset.ipynb <- Codes used to build training-set and experiment-set
 │   ├── AL-bert-cal.ipynb <- Code for algorithm 2 with BERT & CAL
@@ -155,6 +157,6 @@ Our group opted to use [ODU's HPC Wahab Cluster](https://ondemand.wahab.hpc.odu.
 
 1. In order to develop this framework proposal, we used `HPC ODU cluster` and Jupyter notebook and the environment was set up with the following parameters:
     + **Python Suite:** tensorflow 2.12 + pytorch 1.13 GPU
-    **Number of Cores:** 8
+    + **Number of Cores:** 8
 2. Follow steps in jupyter notebook [Extra credit proposal](notebooks/722_ActiveLearning_bert.ipynb)
 
