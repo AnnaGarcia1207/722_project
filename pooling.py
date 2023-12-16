@@ -36,6 +36,17 @@ def get_classification_model(model_file):
         return None
 
 def start_pooling(experiment_dataset):
+    """
+    Executes pooling proposed algorithm. Using the trained models,
+    It will get its predicted probability and decide if it shoudl be included
+    in the final Pooling dataset.
+
+    Parameters:
+        experiment_dataset (str): The filename or full path of the experiment set.
+
+    Returns:
+        pooling_dataset: the resulting documents that the models deeemed hateful.
+    """
 
     # will hold resulting dataset come from pooling
     pooling_dataset = pd.DataFrame()
@@ -125,6 +136,10 @@ def start_pooling(experiment_dataset):
 
 
 def main():
+    """
+    Starts the pooling algorithm by reading the experiment-dataset.
+    Finally it will save the pooling dataset as a CSV file.
+    """
     exp_df = pd.read_csv(os.path.join("dataset","experiment_datasetV2.csv"))
 
     pooling_data = start_pooling(exp_df)

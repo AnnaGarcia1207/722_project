@@ -2,8 +2,8 @@ Group: Anna Garcia & Brian Llinas
 
 This is a term project for Machine Learning class (CS722) - The goal of the project is re-create the [NeurIPS research paper](https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/e00da03b685a0dd18fb6a08af0923de0-Paper-round2.pdf)
 
-
-### Setup
+## Running 1st algorithm: Pooling
+### Setup:
 
 1. Make your machine has python3 or you can download [python page](https://www.python.org/downloads/)
 
@@ -27,7 +27,8 @@ myenv/Scripts/activate
 
 pip install -r requirements.txt
 ```
-### Running 1st algorithm: Pooling
+
+### How to run pooling.py:
 
 ** The datasets and the models are already trained. They can be found under `/dataset` and `/pooling_trained_models`. But you can also re-run the models and create the poooling dataset yourself.
 
@@ -74,8 +75,47 @@ Number of duplicates: 269
 Removing duplicates....
 Pooling dataset length: 277
 ```
+----
 
-### Running Extra credit proposal algorithm
+## Running 2nd Algorithm: Active Learning
+
+Our group opted to use [ODU's HPC Wahab Cluster](https://ondemand.wahab.hpc.odu.edu/pun/sys/dashboard/) because it uses BERT from `transformers library from HuggingFace` and it is very resource intensive, so it must be ran using the HPC environment.
+
+1. You must have an account with `ODU's HPC Wahab Cluster`.
+
+2. Create Jupyter Server with the following parameters:
+    > **Python Suite:** tensorflow 2.12 + pytorch 1.13GPU
+
+    > **Number of Cores:** 8
+
+3. Once Jupyter instance has started, click on `Connect to Jupyter`.
+
+4. Create a Jupyter notebook
+
+5. Under `\notebooks`, please upload the following notebooks:
+
+    a.  AL-bert-sal.ipynb
+
+    b. AL-bert-cal.ipynb
+
+    c. AL-tfidf-sal.ipynb
+
+    d. AL-tfidf-cal.ipynb
+
+6. There are four different models being ran for Algorithm 2. To save time, we separated code in four different notebooks to run concurrently.
+
+7. To run the code, click on every cell then click the `RUN` button. You can repeat step 7 for every notebook.
+
+8. Each notebook may produce the following:
+
+    1. Experiment results in CSV format
+    2. logistic regression model saved via `pickle library`
+
+
+
+----
+
+## Running Extra credit proposal algorithm
 
 1. In order to develop this framework proposal, we used `HPC ODU cluster` and Jupyter notebook and the environment was set up with the following parameters:
     + **Python Suite:** tensorflow 2.12 + pytorch 1.13 GPU
