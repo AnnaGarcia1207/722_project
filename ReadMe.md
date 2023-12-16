@@ -24,6 +24,7 @@ File Structure:
 │   ├── tfidf_CAL_experiment_results_v2.csv <- Resulting dataset from algorithm 2 with TFIDF & CAL protocol
 │   ├── train_test_datasetV2.csv <- Training dataset used to train our models
 │   ├── experiment_datasetV2.csv <- Our "Experiment-set" to test the models to build the "Dataset"
+│   ├── pooling_dataset.csv <- Resulting Dataset from algorithm 1 - Pooling
 |   ├── experiment_df_bert.csv <- Resulting dataset from Extra credit proposal algorithm
 ├── notebooks
 │   ├── 722_ActiveLearning_bert.ipynb <- Code used to run the Extra credit proposal
