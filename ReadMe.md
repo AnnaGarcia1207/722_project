@@ -6,10 +6,35 @@ This is a term project for Machine Learning class (CS722) - The goal of the proj
 Our group re-created the proposed methods in the research paper using different environment. We primarily used  `Python3`, `pandas DataFrame`, `sklearn library`, `transformers`, and others. Please see the different steps on how to execute the code.
 
 ## Table of Contents
+
+
 - [Local Setup](https://github.com/AnnaGarcia1207/722_project?tab=readme-ov-file#local-setup)
 - [Running 1st algorithm: Pooling](https://github.com/AnnaGarcia1207/722_project?tab=readme-ov-file#running-1st-algorithm-pooling)
 - [Running 2nd Algorithm: Active Learning](https://github.com/AnnaGarcia1207/722_project?tab=readme-ov-file#running-2nd-algorithm-active-learning)
 - [Running Extra credit proposal algorithm](https://github.com/AnnaGarcia1207/722_project?tab=readme-ov-file#running-extra-credit-proposal-algorithm)
+
+```
+├── al_trained_models <- Trained Logistic Regression For Active Learning method
+├── dataset
+│   ├── bert_CAL_experiment_results_v3.csv <- Resulting dataset from algorithm 2 with BERT & CAL protocol
+│   ├── bert_SAL_experiment_results_v3.csv <- Resulting dataset from algorithm 2 with BERT & SAL protocol
+│   ├── tfidf_SAL_experiment_results_v2.csv <- Resulting dataset from algorithm 2 with TFIDF & SAL protocol
+│   ├── tfidf_CAL_experiment_results_v2.csv <- Resulting dataset from algorithm 2 with TFIDF & CAL protocol
+│   ├── train_test_datasetV2.csv <- Training dataset used to train our models
+│   ├── experiment_datasetV2.csv <- Our "Experiment-set" to test the models to build the "Dataset"
+├── notebooks
+│   ├── 722_PoolingAlgorithmNotebook.ipynb <- Same as pooling.py and pooling_models.py in notebook 
+│   ├── 722_Project_CreateDataset.ipynb <- Codes used to build training-set and experiment-set
+│   ├── AL-bert-cal.ipynb <- Code for algorithm 2 with BERT & CAL
+│   ├── AL-bert-sal.ipynb <- Code for algorithm 2 with BERT & SAL
+│   ├── AL-tfidf-cal.ipynb <- Code for algorithm 2 with TFIDF & CAL
+│   ├── AL-tfidf-sal.ipynb <- Code for algorithm 2 with TFIDF & SAL
+├── pooling_trained_models <- Various trained models for Pooling method
+├── pooling.py
+├── pooling_models.py
+├── ReadMe.md
+├── requirements.txt
+```
 
 ## Local Setup:
 
