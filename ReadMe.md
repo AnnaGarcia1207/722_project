@@ -1,9 +1,16 @@
 Group: Anna Garcia & Brian Llinas
 
-This is a term project for Machine Learning class (CS722) - The goal of the project is re-create the [NeurIPS research paper](https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/e00da03b685a0dd18fb6a08af0923de0-Paper-round2.pdf)
+This is a term project for Machine Learning class (CS722) - The goal of the project is re-create the [NeurIPS research paper](https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/file/e00da03b685a0dd18fb6a08af0923de0-Paper-round2.pdf).
 
-## Running 1st algorithm: Pooling
-### Setup:
+Our group re-created the proposed methods in the research paper using different environment. We primarily used  `Python3`, `pandas DataFrame`, `sklearn library`, `transformers`, and others. Please see the different steps on how to execute the code.
+
+## Table of Contents
+- [Local Setup](#setup)
+- [Running 1st algorithm: Pooling](#pooling)
+- [Running 2nd Algorithm: Active Learning](#AL)
+- [Running Extra credit proposal algorithm](#EC)
+
+## Local Setup:<a name="setup"></a>
 
 1. Make your machine has python3 or you can download [python page](https://www.python.org/downloads/)
 
@@ -28,7 +35,8 @@ myenv/Scripts/activate
 pip install -r requirements.txt
 ```
 
-### How to run pooling.py:
+------
+## Running 1st algorithm: Pooling<a name="pooling"></a>
 
 ** The datasets and the models are already trained. They can be found under `/dataset` and `/pooling_trained_models`. But you can also re-run the models and create the poooling dataset yourself.
 
@@ -77,7 +85,7 @@ Pooling dataset length: 277
 ```
 ----
 
-## Running 2nd Algorithm: Active Learning
+## Running 2nd Algorithm: Active Learning<a name="AL"></a>
 
 Our group opted to use [ODU's HPC Wahab Cluster](https://ondemand.wahab.hpc.odu.edu/pun/sys/dashboard/) because it uses BERT from `transformers library from HuggingFace` and it is very resource intensive, so it must be ran using the HPC environment.
 
@@ -115,7 +123,7 @@ Our group opted to use [ODU's HPC Wahab Cluster](https://ondemand.wahab.hpc.odu.
 
 ----
 
-## Running Extra credit proposal algorithm
+## Running Extra credit proposal algorithm<a name="EC"></a>
 
 1. In order to develop this framework proposal, we used `HPC ODU cluster` and Jupyter notebook and the environment was set up with the following parameters:
     + **Python Suite:** tensorflow 2.12 + pytorch 1.13 GPU
